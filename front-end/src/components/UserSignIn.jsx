@@ -24,7 +24,7 @@ const UserSignIn = () => {
       console.log("Login Success:", response.data);
       setUser(response.data.user);
 
-      navigate("/UserProfile", { state: { user: response.data.user } });
+      navigate("/Attendance");
 
     } catch (error) {
       const errorMsg = error.response?.data?.message || "Login failed. Please try again.";

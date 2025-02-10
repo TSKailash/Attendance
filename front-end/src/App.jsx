@@ -5,6 +5,7 @@ import AdminLogin from './components/AdminLogin';
 import UserProfile from './components/UserProfile';
 import AdminDashboard from './components/AdminDashBoard';
 import Home from './components/Home';
+import Attendance from './components/Attendance';
 const App=()=>{
   return (
     <Routes>
@@ -13,6 +14,7 @@ const App=()=>{
         <Route path="/AdminDashboard" element={<AdminDashboard/>}/>
         <Route path="/UserSignIn" element={<UserSignIn/>}/>
         <Route path="/UserProfile" element={<UserProfile/>}/>
+        <Route path="/Attendance" element={<Attendance/>}/>
       </Routes>
   )
 }
