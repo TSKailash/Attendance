@@ -37,7 +37,21 @@ const userSchema = new mongoose.Schema({
   }
 });
 
+const AttendanceSchema = new mongoose.Schema({
+  username: {
+    type: String,
+    required: true,
+    unique: true,
+    trim: true
+  },
+  Date: {
+    type: Date,
+    required: true
+  }
+});
+
 const Admin = mongoose.model('Admin', adminSchema);
 const User = mongoose.model('User', userSchema);
+const Attendance = mongoose.model('Attendance', AttendanceSchema);
 
-module.exports = { Admin, User };
+module.exports = { Admin, User, Attendance };

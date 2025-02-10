@@ -8,7 +8,7 @@ const Attendance = () => {
   const ALLOWED_LOCATION = {
     latitude: 12.839952842521459,
     longitude: 80.15525117575505,
-    radius: 100000
+    radius: 1000
   };
 
   const getDistance = (lat1, lon1, lat2, lon2) => {
